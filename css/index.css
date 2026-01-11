@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --primary--color: #6b4227;
+    --secondary--color: #ede0d5;
+    --bg--color: #f7f4f0;
+    --primary--font:  "Inter", sans-serif;
+    --secondary--font: "Nunito", sans-serif;
+}
+
+header .links .logo a {
+    color: var(--primary--color);
+}
+
+h1, h2, h3 {
+    font-family: var(--primary--font);
+}
+
+p {
+    font-family:  var(--secondary--font);
+}
+
+* button {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 8px 10px;
+    font-family: var(--secondary--font);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--primary--color);
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--secondary--color);
+    color: var(--primary--color);
+}
+
+
+/* header */
+header {
+    background-color: var(--secondary--color);
+    padding: 10px 50px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    width: 30px;
+}
+
+header .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primary--font);
+}
+
+header a {
+    color: var(--primary--color);
+}
+
+header .links nav {
+    display: flex;
+    column-gap: 30px;
+}
+
+header .links nav a li{
+    padding: 5px 10px;
+}
+
+header .links nav a li:hover {
+    background-color: var(--primary--color);
+    color: var(--secondary--color);
+}
+
+header .links .user {
+    display: flex;
+    gap: 10px;
+}
+
+header .links .user a button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: var(--secondary--color);
+    font-weight: 500;
+}
+
+
+
+/* Hero Section */
+
+.hero-section {
+    align-content: center;
+    padding: 100px 50px 0 50px;
+    background-color: var(--bg--color);
+}
+
+.hero-section .details {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+.hero-section .content {
+    width: 500px;
+}
+
+.hero-section .content h2 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.hero-section .info {
+    font-size: 18px;
+    padding: 10px 0;
+    color: var(--primary--font);
+    opacity: 0.7;
+}
+
+.hero-section .button {
+    padding: 10px 0;
+}
+
+.hero-section .standards {
+    padding: 10px 0;
+}
+
+.hero-section .standards table {
+    padding: 10px 0;
+    border-collapse: collapse;    
+    width: 70%;
+}
+
+.hero-section .img img {
+    width: 600px;
+    border-radius: 10px;
+}
+
