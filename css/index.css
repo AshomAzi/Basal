@@ -8,9 +8,15 @@
 :root {
     --primary--color: #6b4227;
     --secondary--color: #ede0d5;
+    /* --tertiary--color: #3f191c; */
     --bg--color: #f7f4f0;
     --primary--font:  "Inter", sans-serif;
     --secondary--font: "Nunito", sans-serif;
+    --opacity: 0.7;
+}
+
+body {
+    background-color: var(--secondary--color);
 }
 
 header .links .logo a {
@@ -35,7 +41,7 @@ p {
     font-size: 15px;
     font-weight: 500;
     background-color: var(--primary--color);
-    border: none;
+    border: 1px solid var(--primary--color);
     outline: none;
     color: #fff;
     border-radius: 5px;
@@ -49,17 +55,19 @@ p {
 
 /* header */
 header {
-    background-color: var(--secondary--color);
     padding: 10px 50px;
     z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    border: 1px solid var(--primary--color);
+    background-color: var(--bg--color);
 }
 
 header .logo {
     width: 30px;
+    user-select: none;
 }
 
 header .links {
@@ -107,6 +115,7 @@ header .links .user a button {
     align-content: center;
     padding: 100px 50px 0 50px;
     background-color: var(--bg--color);
+    height: 85vh;
 }
 
 .hero-section .details {
@@ -123,32 +132,73 @@ header .links .user a button {
 
 .hero-section .content h2 {
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .hero-section .info {
     font-size: 18px;
-    padding: 10px 0;
+    padding: 15px 0;
     color: var(--primary--font);
-    opacity: 0.7;
+    opacity: var(--opacity);
 }
 
 .hero-section .button {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .hero-section .standards {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .hero-section .standards table {
-    padding: 10px 0;
+    padding: 15px 0;
     border-collapse: collapse;    
     width: 70%;
+}
+
+.hero-section .standards .data {
+    font-weight: 600;
+}
+
+.hero-section .standards .name {
+    opacity: var(--opacity);
 }
 
 .hero-section .img img {
     width: 600px;
     border-radius: 10px;
+}
+
+/* trust */
+
+.trust {
+    padding: 100px;
+}
+
+.trust .head {
+    margin-bottom: 80px;
+    width: 550px;
+}
+
+.trust .head h2{
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.trust .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.trust .infos .info {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 350px;
+}
+
+.trust .infos .info svg {
+    color: var(--primary--color);
 }
 
