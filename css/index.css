@@ -23,7 +23,7 @@ header .links .logo a {
     color: var(--primary--color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--primary--font);
 }
 
@@ -198,7 +198,123 @@ header .links .user a button {
     width: 350px;
 }
 
+.trust .infos .info p {
+    color: var(--primary--font);
+    opacity: var(--opacity);
+    line-height: 1.5em;
+}
+
 .trust .infos .info svg {
     color: var(--primary--color);
 }
 
+/* Customer preferences */
+
+.preferences {
+    background-color: var(--bg--color);
+    padding: 100px;
+}
+
+.preferences .info {
+    margin-bottom: 30px;
+}
+
+.preferences .info h2 {
+    margin-bottom: 10px;
+}
+
+.preferences .drinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preferences .drinks .items {
+    border-radius: 10px 10px 0 0;
+}
+
+.preferences .drinks .img {
+    margin-bottom: 20px;
+}
+
+.preferences .drinks .images .img img {
+    width: 250px;
+    height: 330px;
+    border-radius: 10px 10px 0 0;
+}
+
+.preferences .drinks .images .formation {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.preferences .drinks .images .formation .price {
+    font-weight: 600;    
+}
+
+
+.story {
+    background-color: var(--secondary--color);
+    padding: 50px;
+}
+
+.story .details{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.story .img img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.story .info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.story .info h2 {
+    font-size: 30px;
+}
+
+.story .info p {
+    font-size: 18px;
+    color: var(--primary--font);
+    opacity: var(--opacity);
+    line-height: 1.5em;
+}
+
+/* Menu */
+
+.menu {
+    padding: 100px;
+    background-color: var(--bg--color);
+}
+
+.menu .info {
+    margin-bottom: 50px;
+}
+
+.menu .info h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.menu .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu .details .infos {
+    padding: 20px;
+    width: 200px;
+    border: 1px solid var(--secondary--color);
+}
