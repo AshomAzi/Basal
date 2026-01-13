@@ -253,6 +253,7 @@ header .links .user a button {
     font-weight: 600;    
 }
 
+/* Story */
 
 .story {
     background-color: var(--secondary--color);
@@ -317,4 +318,171 @@ header .links .user a button {
     padding: 20px;
     width: 200px;
     border: 1px solid var(--secondary--color);
+}
+
+/* Locations */
+
+.locations {
+    padding: 100px;
+}
+
+.locations .head {
+    margin-bottom: 30px;
+}
+
+.locations .head h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}  
+
+.locations .each {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.locations .each .local {
+    width: 400px;
+    padding: 40px 20px;
+    border: 1px solid var(--bg--color);
+    border-radius: 10px;
+}
+
+/* About */
+
+.about {
+    background-color: var(--bg--color);
+    padding: 100px;
+}
+
+.about .head {
+    margin-bottom: 30px;
+}
+
+.about .head h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .info .basic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .info .values {
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid var(--primary--color);
+    border-radius: 10px;
+    background-color: var(--secondary--color);
+}
+
+/* Blog */
+
+.blog {
+    padding: 100px;
+    background-color: var(--secondary--color);
+}
+
+.blog .head {
+    margin-bottom: 30px;
+}
+
+.blog .head h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.blog .posts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+}
+
+.blog .posts .post {
+    width: 350px;
+    border: 1px solid var(--bg--color);
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 1.9em;
+}
+
+/* connect */
+
+.connect {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg--color);
+}
+
+.connect .info {
+    align-items: center;
+    width: 800px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--primary--color);
+    border-radius: 10px;
+    color: var(--secondary--color);
+}
+
+.connect .info h2 {
+    font-size: 30px;
+}
+
+.connect .info p {
+    color: var(--primary--font);
+    line-height: 1.5em;
+    width: 450px;
+}
+
+.connect .info .subscribe {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.connect .info .subscribe input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid var(--primary--color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.connect .info .subscribe input::placeholder {
+    font-family: var(--secondary--font);
+    font-size: 15px;
+    color: var(--primary--color);
+    opacity: var(--opacity);
+}
+
+.connect .info .subscribe button {
+    padding: 10px 15px;
+    font-family: var(--secondary--font);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--bg--color);
+    border: 1px solid var(--primary--color);
+    outline: none;
+    color: var(--primary--color);
+    border-radius: 5px;
 }
