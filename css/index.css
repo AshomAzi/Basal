@@ -15,6 +15,10 @@
     --opacity: 0.7;
 }
 
+li {
+    font-family: var(--primary--font);
+}
+
 body {
     background-color: var(--secondary--color);
 }
@@ -74,7 +78,6 @@ header .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--primary--font);
 }
 
 header a {
@@ -454,13 +457,13 @@ header .links .user a button {
     width: 450px;
 }
 
-.connect .info .subscribe {
+.connect .info form {
     margin-top: 10px;
     display: flex;
     gap: 10px;
 }
 
-.connect .info .subscribe input {
+.connect .info form input {
     padding: 10px;
     width: 200px;
     border: 1px solid var(--primary--color);
@@ -468,14 +471,14 @@ header .links .user a button {
     outline: none;
 }
 
-.connect .info .subscribe input::placeholder {
+.connect .info form input::placeholder {
     font-family: var(--secondary--font);
     font-size: 15px;
     color: var(--primary--color);
     opacity: var(--opacity);
 }
 
-.connect .info .subscribe button {
+.connect .info form button {
     padding: 10px 15px;
     font-family: var(--secondary--font);
     font-size: 15px;
@@ -485,4 +488,47 @@ header .links .user a button {
     outline: none;
     color: var(--primary--color);
     border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    padding: 100px;
+    background-color: var(--primary--color);
+    color: var(--secondary--color);
+}
+
+footer * {
+    color: var(--secondary--color);
+}
+
+footer .info h2{
+    margin-bottom: 40px;
+}
+
+footer .info p {
+    line-height: 30px;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .footer .info {
+    width: 420px;
+    line-height: 2em;
+}
+
+footer .footer .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10em;
+    height: 200px;
+    line-height: 2em;
+}
+
+footer .footer .content h2 {
+    margin-bottom: 40px;
 }
