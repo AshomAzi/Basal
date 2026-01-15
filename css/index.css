@@ -8,7 +8,6 @@
 :root {
     --primary--color: #6b4227;
     --secondary--color: #ede0d5;
-    /* --tertiary--color: #3f191c; */
     --bg--color: #f7f4f0;
     --primary--font:  "Inter", sans-serif;
     --secondary--font: "Nunito", sans-serif;
@@ -35,9 +34,16 @@ p {
     font-family:  var(--secondary--font);
 }
 
-* button {
+* svg {
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+* button, nav a li {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
 
 .btn {
     padding: 8px 10px;
@@ -108,6 +114,34 @@ header .links .user a button {
     cursor: pointer;
     font-family: var(--secondary--color);
     font-weight: 500;
+}
+
+.login {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.login .logs{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: var(--bg--color);
+    border: 1px solid var(--primary--color);
+}
+
+
+.login a {
+    color: var(--secondary--font);
+}
+
+.login svg {
+    position: relative;
+    left: 60%;
 }
 
 
@@ -538,4 +572,26 @@ footer .content .links a:hover {
     text-decoration: underline;
 }
 
+footer .line {
+    margin: 30px 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary--color);
+    opacity: var(--opacity);
+}
 
+footer .privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    opacity: var(--opacity);
+}
+
+footer .privacy p {
+    font-size: 14px;
+}
+
+footer .policy {
+    display: flex;
+    gap: 20px;
+}
