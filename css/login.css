@@ -11,7 +11,6 @@
     --bg--color: #f7f4f0;
     --primary--font:  "Inter", sans-serif;
     --secondary--font: "Nunito", sans-serif;
-    --opacity: 0.7;
 }
 
 li {
@@ -56,9 +55,20 @@ p {
     border-radius: 5px;
 }
 
+.btn:hover {
+    background-color: var(--secondary--color);
+    color: var(--primary--color);
+}
+
 * button, nav a li {
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .login {
@@ -70,28 +80,37 @@ p {
     height: 100vh;
     width: 50%;
     border-radius: 0 20px 0 0;
-    background-color: var(--primary--color);
-    opacity: var(--opacity);
+    background-color: rgb(0, 0, 0, 0.7); 
+
 }
 
-.logo {
+.login .logo {
     display: inline;
     user-select: none;
     text-align: center;
-    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login .logo a {
+    color: var(--secondary--color);
 }
 
 form {
-    padding: 100px 80px;
+    padding: 30px 80px 70px;
     background-color: var(--secondary--color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     border-radius: 5px;
     
 }
+
+form .log {
+    margin: 10px 0 20px;
+}
+
 
 form .credentials {
     display: flex;
@@ -102,14 +121,43 @@ form .credentials {
 form .credentials input {
     background-color: var(--bg--color);
     border: 1px solid var(--primary--color);
-    border-radius: 5px;
+    border-radius: 3px;
     height: 25px;
     width: 200px;
-    padding: 10px;
+    padding: 6px 8px;
 }
 
 form .forgot-password {
-    align-self: flex-start;
+    display: flex;
+    gap: 55px;
     font-size: 14px;
     margin-top: 10px;
+    font-family: var(--secondary--font);
 }
+
+form .forgot-password a {
+    color: #000;
+}
+
+form .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.container .info {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 35%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
+    color: var(--secondary--color);
+}
+
+.container .info span {
+    color: red;
+    font-family: var(--secondary--font);
+}
+
