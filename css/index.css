@@ -76,7 +76,7 @@ header {
 }
 
 header .logo {
-    width: 30px;
+    width: 100%;
     user-select: none;
 }
 
@@ -104,44 +104,14 @@ header .links nav a li:hover {
     color: var(--secondary--color);
 }
 
-header .links .user {
+header .links .login-signup {
     display: flex;
     gap: 10px;
 }
 
-header .links .user a button {
-    padding: 5px 10px;
-    cursor: pointer;
-    font-family: var(--secondary--color);
+header .links .login-signup a {
+    padding: 6px 12px;
     font-weight: 500;
-}
-
-.login {
-    display: block;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-}
-
-.login .logs{
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 15px 30px;
-    background-color: var(--bg--color);
-    border: 1px solid var(--primary--color);
-}
-
-
-.login a {
-    color: var(--secondary--font);
-}
-
-.login svg {
-    position: relative;
-    left: 60%;
 }
 
 
