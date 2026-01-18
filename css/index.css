@@ -201,7 +201,7 @@ header .links .login-signup a {
     display: flex;
     gap: 20px;
     flex-direction: column;
-    width: 350px;
+    width: 320px;
 }
 
 .trust .infos .info p {
@@ -506,8 +506,8 @@ footer * {
     color: var(--secondary--color);
 }
 
-footer .info h2{
-    margin-bottom: 40px;
+footer h2{
+    margin-bottom: 20px;
 }
 
 footer .info p {
@@ -528,13 +528,9 @@ footer .footer .info {
 footer .footer .content {
     display: flex;
     align-items: flex-start;
-    gap: 10em;
+    gap: 5em;
     height: 200px;
     line-height: 2em;
-}
-
-footer .footer .content h2 {
-    margin-bottom: 40px;
 }
 
 footer .content .links a:hover {
