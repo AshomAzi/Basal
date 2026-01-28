@@ -180,7 +180,6 @@ header .links .login-signup a {
 }
 
 .hero-section .standards table {
-    display: flex;
     padding: 15px 0;
     border-collapse: collapse;    
     width: 70%;
@@ -648,7 +647,7 @@ footer .policy {
 
     .hero-section .standards table {
         width: 100%;
-        padding: 5px 0;
+        margin: 5px 0;
     }
 
     .hero-section .standards table td {
