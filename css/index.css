@@ -142,7 +142,7 @@ header .links .login-signup a {
 
 .hero-section {
     align-content: center;
-    padding: 100px 50px 0 50px;
+    /* padding: 100px 50px 0 50px; */
     background-color: var(--bg--color);
     height: 85vh;
 }
@@ -180,6 +180,7 @@ header .links .login-signup a {
 }
 
 .hero-section .standards table {
+    display: flex;
     padding: 15px 0;
     border-collapse: collapse;    
     width: 70%;
@@ -583,3 +584,74 @@ footer .policy {
     display: flex;
     gap: 20px;
 }
+
+/* Responsive */
+
+@media (max-width:480px){
+
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo h1{
+        font-size: 30px;
+    }
+
+    .hero-section {
+        align-content: center;
+        padding: 0 20px;
+        background-color: var(--bg--color);
+        height: 85vh;
+        margin: 0;
+    }
+
+    .hero-section .details {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header .links nav {
+        display: none;
+    }
+
+    .hero-section {
+        align-content: center;
+        padding: 20px 0 0;
+        background-color: var(--bg--color);
+        height: 100%;
+        width: 100vw;
+    }
+
+    .hero-section .img img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-section .content {
+        width: 88%;
+        margin: 0 20px;
+    }
+
+    .hero-section .content h2 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .hero-section .info {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .hero-section .standards table {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .hero-section .standards table td {
+        padding: 0 20px 0 0;
+    }
+}   
