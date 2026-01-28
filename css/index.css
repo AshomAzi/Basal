@@ -873,11 +873,23 @@ footer .policy {
     }
 
     footer .footer .info {
-        width: 100%;
-        line-height: 20px;
-    }
+    width: 100%;
+    margin: 0 0 30px;
+}
 
     footer .footer .content {
+        height: 100%;
         flex-direction: column;
-    }   
+        gap: 50px;
+    }
+
+    footer .footer .content h2 {
+        margin-bottom: 10px;
+    }
+
+    footer .privacy p {
+        font-size: 13px;
+        width: 100%;
+        margin: 0 5px;
+    }
 }
