@@ -887,9 +887,34 @@ footer .policy {
         margin-bottom: 10px;
     }
 
+    footer .privacy {
+        gap: 20px;
+        align-items: flex-start;
+    }
+
     footer .privacy p {
         font-size: 13px;
         width: 100%;
         margin: 0 5px;
     }
+
+    .footer .privacy  p {
+        width: 10px;
+        background-color: red;
+    }
+
+    footer .privacy p {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    footer .policy {
+        gap: 15px;
+        width: 100%;
+    }
+
+    footer .policy p {
+        width: 100%;
+    }
+
 }
