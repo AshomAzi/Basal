@@ -684,6 +684,7 @@ footer .policy {
         gap: 10px;
         width: 100%;
         width: 100%;
+        border-bottom: 1px solid #000;
     }
 
     .trust .infos .info h3 {
@@ -709,6 +710,10 @@ footer .policy {
         flex-direction: column;
         justify-content: space-between;
         gap: 50px;
+    }
+
+    .preferences .drinks .images .img img {
+        height: 550px;
     }
 
     .preferences .drinks .images .formation {
@@ -900,7 +905,6 @@ footer .policy {
 
     .footer .privacy  p {
         width: 10px;
-        background-color: red;
     }
 
     footer .privacy p {
@@ -917,4 +921,232 @@ footer .policy {
         width: 100%;
     }
 
+}
+
+@media (max-width:600px){
+    /* Header */
+
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo h1{
+        font-size: 30px;
+    }
+
+    /* Hero-Section */
+
+    .hero-section {
+        align-content: center;
+        padding: 0 20px;
+        background-color: var(--bg--color);
+        height: 85vh;
+        margin: 0;
+    }
+
+    .hero-section .details {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header .links nav {
+        display: none;
+    }
+
+    .hero-section {
+        align-content: center;
+        padding: 20px 0 0;
+        background-color: var(--bg--color);
+        height: 100%;
+        width: 100vw;
+    }
+
+    .hero-section .img img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+        .hero-section .content {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .hero-section .content h2 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .hero-section .info {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .hero-section .standards table {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .hero-section .standards table td {
+        padding: 0 20px 0 0;
+    }
+
+    .trust {
+        padding: 50px 20px;
+    }
+
+    .trust .head {
+        margin-bottom: 50px;
+        width: auto;
+    }
+
+    .trust .infos {
+        flex-direction: column;
+    }
+
+    .trust .infos .info
+     {
+        width: 100%;
+        margin: 20px 0;
+        border-bottom: 1px solid #000;
+    }
+
+    /*customers preferences*/
+
+    .preferences
+     {
+        padding: 50px 20px 0;
+    }
+
+    .preferences .drinks {
+        flex-direction: column;
+    }
+
+    .preferences .drinks .items {
+        margin-bottom: 50px;
+    }
+
+    .preferences .drinks .images .img img {
+        height: 550px;
+    }
+
+    /* Our Story */
+
+    .story
+     {
+        padding: 50px 20px 0;
+    }
+
+    .story .details {
+        flex-direction: column;
+    }
+
+    .story {
+        position: relative;
+        padding: 80px 20px 0;
+    }
+
+    .story .details{
+        padding: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .story .img img {
+        width: 100%;
+        margin: 50px 0 0;
+        border-radius: 5px;
+
+    }
+
+    .story .info h2 {
+        position: absolute;
+        top: 70px;
+    }
+
+    /* Menu */
+
+    .menu
+     {
+        padding: 50px 20px 20px;
+    }
+
+    .menu .details {
+        flex-direction: column;
+    }
+
+    .menu .details .infos {
+        width: 90%;
+    }
+
+    /* Locations */
+
+    .locations {
+        padding: 50px 20px 20px;
+    }
+
+    .locations .each {
+        flex-direction: column;
+    }
+
+    .locations .each .local {
+        line-height: 1.5em;
+    }
+
+    /* About */
+
+    .about
+     {
+        padding: 50px 20px 20px;
+    }
+
+    .about .info {
+        flex-direction: column;
+    }
+
+    .about .info .values {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    /* Blog */
+
+    .blog {
+        padding: 50px 20px 20px;
+    }
+
+    .blog .posts {
+        flex-direction: column;
+    }
+
+    .blog .posts .post {
+        width: 100%;
+    }
+
+    /* connect */
+
+    .connect .info {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 50px 20px 20px;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .footer .content {
+        height: 100%;
+        flex-direction: column;
+    }
 }
