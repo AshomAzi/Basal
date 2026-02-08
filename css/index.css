@@ -1150,3 +1150,209 @@ footer .policy {
         flex-direction: column;
     }
 }
+
+
+@media (max-width:768px){
+    /* Header */
+
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo h1{
+        font-size: 30px;
+    }
+
+    /* Hero-Section */
+
+    .hero-section {
+        align-content: center;
+        padding: 0 20px;
+        background-color: var(--bg--color);
+        height: 85vh;
+        margin: 0;
+    }
+
+    .hero-section .details {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header .links nav {
+        display: none;
+    }
+
+    .hero-section {
+        align-content: center;
+        padding: 20px 0 0;
+        background-color: var(--bg--color);
+        height: 100%;
+        width: 100vw;
+    }
+
+    .hero-section .img img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-section .content {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .hero-section .content h2 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .hero-section .info {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .hero-section .standards table {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .hero-section .standards table td {
+        padding: 0 20px 0 0;
+    }
+
+    /* Trust */
+    .trust {
+        padding: 50px 20px;
+    }
+
+    .trust .infos {
+        gap: 30px;
+    }
+
+    /* Preferences */
+
+    .preferences {
+        padding: 50px 20px 0;
+    }
+
+    .preferences .drinks {
+        flex-direction: column;
+    }
+
+    .preferences .drinks .images .img img
+    {
+        height: 600px;
+    }
+
+    .preferences .drinks .items {
+        margin-bottom: 80px;
+    }
+
+    /* Story */
+
+    .story {
+        position: relative;
+        padding: 100px 20px 0;
+    }
+
+    .story .details {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .story .img img
+    {
+        width: 100%;
+    }
+
+    .story .info h2 {
+        position: absolute;
+        top: 50px;
+    }
+
+    /* Menu */
+
+    .menu {
+        padding: 50px 20px 50px;
+    }
+
+    .menu .details {
+        flex-direction: column;
+    }
+
+    .menu .details .infos {
+        width: 100%;
+        height: 100px;
+        line-height: 2em;
+    }
+
+
+    /* Location */
+    .locations {
+        padding: 50px 20px;
+    }
+
+    .locations .each {
+        flex-direction: column;
+    }
+
+    .locations .each .local {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    /* About */
+
+    .about {
+        padding: 50px 20px;
+    }
+
+    .about .info
+    {
+        gap: 20px;
+    }
+
+    .about .info .values {
+        padding: 10px;
+    }
+
+    /* Blog */
+
+    .blog {
+        padding: 50px 20px;
+    }
+
+    .blog .posts {
+        flex-direction: column;
+    }
+
+    .blog .posts .post {
+        width: 100%;
+    }
+
+    .connect .info {
+        width: 500px;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .footer .content
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+}
