@@ -9,10 +9,17 @@
     --primary--color: #6b4227;
     --secondary--color: #ede0d5;
     --bg--color: #f7f4f0;
-    --primary--font:  "Inter", sans-serif;
+    --primary--font: "Inter", sans-serif;
     --secondary--font: "Nunito", sans-serif;
     --opacity: 0.7;
 }
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 li {
     font-family: var(--primary--font);
@@ -26,12 +33,15 @@ header .links .logo a {
     color: var(--primary--color);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--primary--font);
 }
 
 p {
-    font-family:  var(--secondary--font);
+    font-family: var(--secondary--font);
 }
 
 * svg {
@@ -39,7 +49,8 @@ p {
     transition: all 0.5s ease;
 }
 
-* button, nav a li {
+* button,
+nav a li {
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -94,7 +105,7 @@ header .links nav {
     column-gap: 30px;
 }
 
-header .links nav a li{
+header .links nav a li {
     padding: 5px 10px;
 }
 
@@ -181,7 +192,7 @@ header .links .login-signup a {
 
 .hero-section .standards table {
     padding: 15px 0;
-    border-collapse: collapse;    
+    border-collapse: collapse;
     width: 70%;
 }
 
@@ -209,7 +220,7 @@ header .links .login-signup a {
     width: 550px;
 }
 
-.trust .head h2{
+.trust .head h2 {
     font-size: 25px;
     margin-bottom: 18px;
 }
@@ -280,7 +291,7 @@ header .links .login-signup a {
 }
 
 .preferences .drinks .images .formation .price {
-    font-weight: 600;    
+    font-weight: 600;
 }
 
 /* Story */
@@ -290,7 +301,7 @@ header .links .login-signup a {
     padding: 50px;
 }
 
-.story .details{
+.story .details {
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -363,7 +374,7 @@ header .links .login-signup a {
 .locations .head h2 {
     font-size: 30px;
     margin-bottom: 10px;
-}  
+}
 
 .locations .each {
     display: flex;
@@ -529,7 +540,7 @@ footer * {
     color: var(--secondary--color);
 }
 
-footer h2{
+footer h2 {
     margin-bottom: 20px;
 }
 
@@ -571,7 +582,7 @@ footer .line {
 footer .privacy {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     opacity: var(--opacity);
 }
 
@@ -584,9 +595,14 @@ footer .policy {
     gap: 20px;
 }
 
+footer .courtesy {
+    margin: 50px auto;
+    text-align: center;
+}
+
 /* Responsive */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
     /* Header */
 
@@ -594,7 +610,7 @@ footer .policy {
         padding: 10px 20px;
     }
 
-    header .logo h1{
+    header .logo h1 {
         font-size: 30px;
     }
 
@@ -669,7 +685,7 @@ footer .policy {
         width: 100%;
     }
 
-    .trust .head h2{
+    .trust .head h2 {
         font-size: 20px;
         margin-bottom: 10px;
     }
@@ -700,7 +716,7 @@ footer .policy {
     .preferences .info {
         margin-bottom: 30px;
     }
-    
+
     .preferences .info h2 {
         font-size: 20px;
     }
@@ -713,7 +729,7 @@ footer .policy {
     }
 
     .preferences .drinks .images .img img {
-        height: 550px;
+        height: 450px;
     }
 
     .preferences .drinks .images .formation {
@@ -727,7 +743,7 @@ footer .policy {
         padding: 80px 20px 50px;
     }
 
-    .story .details{
+    .story .details {
         padding: 0;
         flex-direction: column;
     }
@@ -743,7 +759,7 @@ footer .policy {
         top: 30px;
     }
 
-    .story .details{
+    .story .details {
         gap: 30px;
     }
 
@@ -878,9 +894,9 @@ footer .policy {
     }
 
     footer .footer .info {
-    width: 100%;
-    margin: 0 0 30px;
-}
+        width: 100%;
+        margin: 0 0 30px;
+    }
 
     footer .footer .content {
         height: 100%;
@@ -903,7 +919,7 @@ footer .policy {
         margin: 0 5px;
     }
 
-    .footer .privacy  p {
+    .footer .privacy p {
         width: 10px;
     }
 
@@ -923,14 +939,14 @@ footer .policy {
 
 }
 
-@media (max-width:600px){
+@media (481px <=width <=600px) {
     /* Header */
 
     header {
         padding: 10px 20px;
     }
 
-    header .logo h1{
+    header .logo h1 {
         font-size: 30px;
     }
 
@@ -970,7 +986,7 @@ footer .policy {
         border-radius: 0;
     }
 
-        .hero-section .content {
+    .hero-section .content {
         width: 90%;
         margin: auto;
         padding: 20px;
@@ -1008,8 +1024,7 @@ footer .policy {
         flex-direction: column;
     }
 
-    .trust .infos .info
-     {
+    .trust .infos .info {
         width: 100%;
         margin: 20px 0;
         border-bottom: 1px solid #000;
@@ -1017,8 +1032,7 @@ footer .policy {
 
     /*customers preferences*/
 
-    .preferences
-     {
+    .preferences {
         padding: 50px 20px 0;
     }
 
@@ -1036,8 +1050,7 @@ footer .policy {
 
     /* Our Story */
 
-    .story
-     {
+    .story {
         padding: 50px 20px 0;
     }
 
@@ -1050,7 +1063,7 @@ footer .policy {
         padding: 80px 20px 0;
     }
 
-    .story .details{
+    .story .details {
         padding: 0;
         flex-direction: column;
         gap: 20px;
@@ -1070,8 +1083,7 @@ footer .policy {
 
     /* Menu */
 
-    .menu
-     {
+    .menu {
         padding: 50px 20px 20px;
     }
 
@@ -1099,8 +1111,7 @@ footer .policy {
 
     /* About */
 
-    .about
-     {
+    .about {
         padding: 50px 20px 20px;
     }
 
@@ -1152,14 +1163,14 @@ footer .policy {
 }
 
 
-@media (max-width:768px){
+@media (601 <=width <=768px) {
     /* Header */
 
     header {
         padding: 10px 20px;
     }
 
-    header .logo h1{
+    header .logo h1 {
         font-size: 30px;
     }
 
@@ -1243,8 +1254,7 @@ footer .policy {
         flex-direction: column;
     }
 
-    .preferences .drinks .images .img img
-    {
+    .preferences .drinks .images .img img {
         height: 600px;
     }
 
@@ -1264,8 +1274,7 @@ footer .policy {
         flex-direction: column;
     }
 
-    .story .img img
-    {
+    .story .img img {
         width: 100%;
     }
 
@@ -1311,8 +1320,7 @@ footer .policy {
         padding: 50px 20px;
     }
 
-    .about .info
-    {
+    .about .info {
         gap: 20px;
     }
 
@@ -1349,8 +1357,224 @@ footer .policy {
         gap: 20px;
     }
 
-    footer .footer .content
-    {
+    footer .footer .content {
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+
+
+@media (769px <=width <=853px) {
+
+    Header header .links nav {
+        display: none;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        align-content: center;
+        padding: 0 20px;
+        background-color: var(--bg--color);
+        height: 85vh;
+        margin: 0;
+    }
+
+    .hero-section .details {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    header .links nav {
+        display: none;
+    }
+
+    .hero-section {
+        align-content: center;
+        padding: 20px 0 0;
+        background-color: var(--bg--color);
+        height: 100%;
+        width: 100vw;
+    }
+
+    .hero-section .img img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-section .content {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .hero-section .content h2 {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+
+    .hero-section .info {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    /* .hero-section .standards table td {
+        padding: 0 20px 0 0;
+        margin: 0 500px 0 0;
+    }
+} */
+
+    trust .trust {
+        padding: 50px 20px;
+    }
+
+    .trust .infos {
+        gap: 50px;
+    }
+
+    .preferences {
+        padding: 50px 20px;
+    }
+
+    .preferences .drinks {
+        flex-direction: column;
+    }
+
+    .preferences .drinks .items {
+        margin-bottom: 50px;
+    }
+
+    .preferences .drinks .images .img img {
+        height: 800px;
+    }
+
+    .hero-section .standards table {
+        width: 50%;
+    }
+
+    .hero-section .standards table td p {
+        padding-bottom: 10px;
+    }
+
+    /* Trust */
+
+    .trust {
+        padding: 100px 40px;
+    }
+
+    /* Customer preferences */
+
+    .preferences {
+        padding: 80px 20px;
+    }
+
+    .preferences .drinks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .preferences .drinks .images .img img {
+        height: 350px;
+        width: 320px;
+    }
+
+    /* Story */
+
+    .story {
+        position: relative;
+        padding: 100px 50px;
+    }
+
+    .story .details {
+        flex-direction: column;
+    }
+
+    .story .info {
+        height: 100%;
+    }
+
+    .story .info h2 {
+        position: absolute;
+        top: 85px;
+        left: 85px;
+    }
+
+    /* Menu */
+
+    .menu {
+        padding: 100px 50px;
+    }
+
+    .menu .details {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .menu .details .infos {
+        width: 250px;
+        max-height: 100px;
+    }
+
+    .menu .details .infos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Locations */
+
+    .locations {
+        padding: 100px 50px 50px;
+    }
+
+    /* About */
+
+    .about {
+        padding: 100px 50px;
+    }
+
+    /* Blog */
+
+    .blog {
+        padding: 100px 50px;
+    }
+
+    .blog .posts {
+        gap: 20px;
+    }
+
+    .blog .posts .post {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Connect  */
+
+    .connect .info {
+        width: 650px;
+    }
+
+    footer {
+        padding: 100px 50px;
+        height: auto;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    footer .footer .content {
+        flex-direction: column;
+    }
+
+    footer .footer .content {
         flex-direction: column;
         height: auto;
     }
