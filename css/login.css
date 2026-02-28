@@ -169,6 +169,9 @@ form .forgot-password a:hover {
 /* Responsive */
 
 @media (max-width:480px) {
+    body {
+        overflow-y: hidden;
+    }
 
     .container {
         display: block;
@@ -212,6 +215,9 @@ form .forgot-password a:hover {
 }
 
 @media (481px <=width <=600px) {
+    body {
+        overflow-y: hidden;
+    }
 
     .container {
         display: block;
@@ -220,14 +226,23 @@ form .forgot-password a:hover {
     .login {
         width: 100%;
     }
+
+    form {
+        padding: 20px 50px 50px;
+    }
+
+    .container .info {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+    }
 }
 
 
-@media (601 <=width <=768px) {
-    
+@media (601px <=width <=768px) {
+    body {
+        overflow-y: hidden;
+    }
 }
 
 
-@media (769px <=width <=853px) { 
-
-}
