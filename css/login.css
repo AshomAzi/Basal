@@ -240,8 +240,27 @@ form .forgot-password a:hover {
 
 
 @media (601px <=width <=768px) {
-    body {
-        overflow-y: hidden;
+    .container {
+        display: block;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    form {
+        padding: 20px 50px 50px;
+    }
+
+    .container .info {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+    }
+
+    form {
+        width: 60vw;
+        height: 50vh;
     }
 }
 

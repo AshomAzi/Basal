@@ -23,6 +23,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-y: hidden;
     
 }
 
@@ -160,3 +161,65 @@ form .login a:hover {
     color: red;
     font-family: var(--secondary--font);
 }
+
+@media (max-width:480px) {
+   .container {
+        display: block;
+    }
+
+    .register {
+        display: block;
+        width: 100%;
+        padding: 10% 0;
+    }
+
+    form {
+        padding: 30px 0 70px;
+        width: 100%;
+        margin: 10% auto;
+    }
+
+    form .login {
+        margin: 10px auto;
+    }
+
+    .container .info {
+        position: absolute;
+        top: 85%;
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+
+@media (481px <=width <=600px) {
+
+    .container {
+        display: block;
+        height: 100vh;
+    }
+
+    .register {
+        display: block;
+        width: 100%;
+        padding: 25% 0;
+    }
+
+    form {
+        margin: 50px auto;
+        padding: 70px 80px;
+    }
+
+    form .login {
+        margin: 10px auto;
+    }
+
+    .container .info {
+        position: absolute;
+        top: 85%;
+        width: 90vw;
+    }
+}
+
+
+
+
