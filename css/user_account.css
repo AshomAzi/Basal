@@ -367,6 +367,11 @@ img {
 }
 
 @media (max-width:480px) {
+
+    body {
+        overflow-y: hidden;
+    }
+
     .user {
         display: flex;
         flex-direction: column;
