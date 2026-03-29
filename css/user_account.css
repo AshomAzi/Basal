@@ -383,7 +383,7 @@ img {
 
     .header>div p,
     img {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .main .greetings {
@@ -402,7 +402,7 @@ img {
     }
 
     .main .greetings p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .main .greetings .btn {
@@ -419,13 +419,13 @@ img {
     }
 
     .order .info p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /* Subscription */
 
     .subscription p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     /* Next Delivery */
