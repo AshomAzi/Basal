@@ -383,7 +383,8 @@ img {
 
     .header>div p,
     img {
-        font-size: 12px;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .main .greetings {
@@ -394,7 +395,7 @@ img {
     .main .greetings h2,
     .main .greetings p {
         width: 100%;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .main .greetings h2 {
@@ -402,7 +403,7 @@ img {
     }
 
     .main .greetings p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .main .greetings .btn {
@@ -419,19 +420,23 @@ img {
     }
 
     .order .info p {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     /* Subscription */
 
     .subscription p {
-        font-size: 12px;
+        font-size: 100%;
     }
 
     /* Next Delivery */
 
     .delivery .deliver .date {
         font-size: 30px;
+    }
+
+    *p {
+        font-size: 100%;
     }
 }
 
