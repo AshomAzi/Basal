@@ -381,7 +381,11 @@ img {
         padding: 30px;
     }
 
-    .header>div p,
+    .header>div p {
+        font-size: 13px;
+        font-weight: 700;
+    }
+    
     img {
         font-size: 18px;
         font-weight: 500;
@@ -392,7 +396,11 @@ img {
         padding: 0 10px 0 0;
     }
 
-    .main .greetings h2,
+    .main .greetings h2 {
+        width: 100%;
+        font-size: 15px;
+    }
+
     .main .greetings p {
         width: 100%;
         font-size: 18px;
@@ -435,9 +443,6 @@ img {
         font-size: 30px;
     }
 
-    *p {
-        font-size: 100%;
-    }
 }
 
 @media (481px <=width <=600px) {
